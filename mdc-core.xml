@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <MDC xsi:noNamespaceSchemaLocation="http://raw.githubusercontent.com/iqb-mdc/core/master/mdc.xsd"
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
      id="https://raw.githubusercontent.com/iqb-mdc/core/master/mdc-core.xml" version="1.0.0">
@@ -8,7 +9,7 @@
     Über diese Definitionen erfolgt vor allem die Filterung von Merkmalen, damit bestimmte Merkmale nur
     für bestimmte Anwendungsfälle bzw. Datenobjekte bereitgestellt werden.
   </Description>
-  <!--1 or more repetitions:-->
+
   <Owner xml:lang="de">IQB - Institut zur Qualitätsentwicklung im Bildungswesen</Owner>
   <Owner xml:lang="en">IQB - Institute for Educational Quality Improvement</Owner>
   <License>MIT</License>
