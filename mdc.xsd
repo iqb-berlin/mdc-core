@@ -391,6 +391,10 @@
 			<xs:selector xpath="Description"/>
 			<xs:field xpath="@xml:lang"/>
 		</xs:unique>
+		<xs:unique name="MDCatOwnerLanguageUnique">
+			<xs:selector xpath="Owner"/>
+			<xs:field xpath="@xml:lang"/>
+		</xs:unique>
 		<xs:unique name="MDDefIdUnique">
 			<xs:selector xpath="MDDef|MDSetDef"/>
 			<xs:field xpath="@id"/>
