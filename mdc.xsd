@@ -16,7 +16,7 @@
 		</xs:annotation>
 		<xs:simpleContent>
 			<xs:extension base="xs:string">
-				<xs:attribute ref="xml:lang" use="required" default="de" />
+				<xs:attribute ref="xml:lang" default="de" />
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>
