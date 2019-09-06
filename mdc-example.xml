@@ -6,7 +6,7 @@
   <Label xml:lang="en">Catalog for metadata used in IQB-catalogs or IQB-metadata definitions</Label>
 
   <Description xml:lang="de">
-    Diese Definitionen decken alle Metadaten ab, die in der IQB-Itemdatenbank verwendet werden.
+    Diese Definitionen deckt alle Metadaten ab, die in der IQB-Itemdatenbank verwendet werden.
   </Description>
 
   <Owner xml:lang="de">IQB - Institut zur Qualitätsentwicklung im Bildungswesen</Owner>
