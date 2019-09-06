@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<MDCat xsi:noNamespaceSchemaLocation="http://raw.githubusercontent.com/iqb-mdc/core/master/mdc.xsd"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     id="https://raw.githubusercontent.com/iqb-mdc/core/master/mdc-core.xml" version="1.0.0">
+<MDCat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://raw.githubusercontent.com/iqb-mdc/core/master/mdc.xsd"
+        id="https://raw.githubusercontent.com/iqb-mdc/core/master/mdc-core.xml" version="1.0.0">
+
   <Label xml:lang="de">Katalog für Metadaten eines IQB-Katalogs bzw. IQB-Metadatendefinitionen</Label>
   <Label xml:lang="en">Catalog for metadata used in IQB-catalogs or IQB-metadata definitions</Label>
 
@@ -14,7 +15,7 @@
   <Owner xml:lang="en">IQB - Institute for Educational Quality Improvement</Owner>
   <License>MIT</License>
 
-  <MDDef id="1" type="listmultiselect.float">
+  <MDDef id="1" type="listmultiselect">
     <Label xml:lang="de">Inhaltlicher Bezug</Label>
     <Label xml:lang="en">Subject</Label>
     <Value id="1">
@@ -45,7 +46,7 @@
       <Label xml:lang="de">Forschungsdaten</Label>
     </Value>
   </MDDef>
-  <MDDef id="2" type="listmultiselect.float">
+  <MDDef id="2" type="listmultiselect">
     <Label xml:lang="de">Gültigkeitsbereich</Label>
     <Label xml:lang="en">Scope</Label>
     <Value id="1">

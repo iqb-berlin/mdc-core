@@ -13,12 +13,15 @@
   <Owner xml:lang="en">IQB - Institute for Educational Quality Improvement</Owner>
   <License>MIT</License>
 
-  <MDDef id="1" type="listmultiselect.float">
+  <MDDef id="1" type="listmultiselect">
     <Label xml:lang="de">Thema</Label>
     <MDDefMetadata>
       <MD cat="https://raw.githubusercontent.com/iqb-mdc/core/master/mdc-core.xml" def="1">2 6 7</MD>
       <MD cat="https://raw.githubusercontent.com/iqb-mdc/core/master/mdc-core.xml" def="2">1</MD>
     </MDDefMetadata>
+    <TypeSpec>
+      <ListControl>float</ListControl>
+    </TypeSpec>
 
     <Value id="1"><Label xml:lang="de">Schulalltag</Label></Value>
     <Value id="2"><Label xml:lang="de">Familienalltag</Label></Value>
@@ -56,20 +59,23 @@
   </MDDef>
   <MDDef id="2" type="decimal">
     <Label xml:lang="de">Trennschärfe</Label>
-    <TypeSpec>
-      <Digits>4</Digits>
-    </TypeSpec>
     <MDDefMetadata>
       <MD cat="https://raw.githubusercontent.com/iqb-mdc/core/master/mdc-core.xml" def="1">1 2 3 4 5 6 7 8</MD>
       <MD cat="https://raw.githubusercontent.com/iqb-mdc/core/master/mdc-core.xml" def="2">2</MD>
     </MDDefMetadata>
+    <TypeSpec>
+      <Digits>4</Digits>
+    </TypeSpec>
   </MDDef>
-  <MDDef id="3" type="listsingleselect.singleline">
+  <MDDef id="3" type="listsingleselect">
     <Label xml:lang="de">Schwierigkeit geschätzt</Label>
     <MDDefMetadata>
       <MD cat="https://raw.githubusercontent.com/iqb-mdc/core/master/mdc-core.xml" def="1">1 3 4</MD>
       <MD cat="https://raw.githubusercontent.com/iqb-mdc/core/master/mdc-core.xml" def="2">2</MD>
     </MDDefMetadata>
+    <TypeSpec>
+      <ListControl>combobox</ListControl>
+    </TypeSpec>
     <Value id="4"><Label xml:lang="de">sehr gering</Label></Value>
     <Value id="1"><Label xml:lang="de">gering</Label></Value>
     <Value id="3"><Label xml:lang="de">mittel</Label></Value>
