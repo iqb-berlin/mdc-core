@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<MDC xsi:noNamespaceSchemaLocation="http://raw.githubusercontent.com/iqb-mdc/core/master/mdc.xsd"
+<MDCat xsi:noNamespaceSchemaLocation="http://raw.githubusercontent.com/iqb-mdc/core/master/mdc.xsd"
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
      id="https://raw.githubusercontent.com/iqb-mdc/core/master/mdc-core.xml" version="1.0.0">
   <Label xml:lang="de">Katalog für Metadaten eines IQB-Katalogs bzw. IQB-Metadatendefinitionen</Label>
@@ -54,8 +54,11 @@
     <Value id="32"><Label xml:lang="de">Presse, Rundfunk, Fernsehen</Label></Value>
     <Value id="33"><Label xml:lang="de">elektronische Medien</Label></Value>
   </MDDef>
-  <MDDef id="2" type="decimal.4">
+  <MDDef id="2" type="decimal">
     <Label xml:lang="de">Trennschärfe</Label>
+    <TypeSpec>
+      <Digits>4</Digits>
+    </TypeSpec>
     <MDDefMetadata>
       <MD cat="https://raw.githubusercontent.com/iqb-mdc/core/master/mdc-core.xml" def="1">1 2 3 4 5 6 7 8</MD>
       <MD cat="https://raw.githubusercontent.com/iqb-mdc/core/master/mdc-core.xml" def="2">2</MD>
@@ -73,4 +76,4 @@
     <Value id="2"><Label xml:lang="de">hoch</Label></Value>
     <Value id="5"><Label xml:lang="de">sehr hoch</Label></Value>
   </MDDef>
-</MDC>
+</MDCat>
