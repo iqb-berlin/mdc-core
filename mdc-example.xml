@@ -1,18 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
-<MDCat xsi:noNamespaceSchemaLocation="http://raw.githubusercontent.com/iqb-mdc/core/master/mdc.xsd"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     id="https://raw.githubusercontent.com/iqb-mdc/core/master/mdc-example.xml" version="1.0.0">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MDCat xsi:noNamespaceSchemaLocation="http://raw.githubusercontent.com/iqb-mdc/core/master/mdc.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="https://raw.githubusercontent.com/iqb-mdc/core/master/mdc-example.xml" version="1.0.0">
   <Label xml:lang="de">Katalog für Metadaten eines IQB-Katalogs bzw. IQB-Metadatendefinitionen</Label>
   <Label xml:lang="en">Catalog for metadata used in IQB-catalogs or IQB-metadata definitions</Label>
-
   <Description xml:lang="de">
     Diese Definitionen deckt alle Metadaten ab, die in der IQB-Itemdatenbank verwendet werden.
   </Description>
-
   <Owner xml:lang="de">IQB - Institut zur Qualitätsentwicklung im Bildungswesen</Owner>
   <Owner xml:lang="en">IQB - Institute for Educational Quality Improvement</Owner>
   <License>MIT</License>
-
   <MDDef id="1" type="listmultiselect">
     <Label xml:lang="de">Thema</Label>
     <MDDefMetadata>
@@ -22,40 +17,105 @@
     <TypeSpec>
       <ListControl>float</ListControl>
     </TypeSpec>
-
-    <Value id="1"><Label xml:lang="de">Schulalltag</Label></Value>
-    <Value id="2"><Label xml:lang="de">Familienalltag</Label></Value>
-    <Value id="3"><Label xml:lang="de">Wohnen und Umwelt</Label></Value>
-    <Value id="4"><Label xml:lang="de">Essen und Trinken</Label></Value>
-    <Value id="5"><Label xml:lang="de">Einkaufen, Kleidung, Konsum</Label></Value>
-    <Value id="6"><Label xml:lang="de">Dienstleistungen: Arztbesuch, Behörden, Bank u.ä.</Label></Value>
-    <Value id="7"><Label xml:lang="de">Freizeit und Sport</Label></Value>
-    <Value id="8"><Label xml:lang="de">Haustiere, Tiere</Label></Value>
-    <Value id="9"><Label xml:lang="de">Wetter</Label></Value>
-    <Value id="10"><Label xml:lang="de">Verkehrsmittel</Label></Value>
-    <Value id="11"><Label xml:lang="de">Zwischenmenschliche Beziehungen: Liebe, Freundschaft, Familie</Label></Value>
-    <Value id="12"><Label xml:lang="de">Identität</Label></Value>
-    <Value id="13"><Label xml:lang="de">Erziehung</Label></Value>
-    <Value id="14"><Label xml:lang="de">Kommunikation</Label></Value>
-    <Value id="15"><Label xml:lang="de">Schule und Unterricht</Label></Value>
-    <Value id="16"><Label xml:lang="de">Ausbildung</Label></Value>
-    <Value id="17"><Label xml:lang="de">Berufe</Label></Value>
-    <Value id="18"><Label xml:lang="de">Sprache und Sprachenlernen</Label></Value>
-    <Value id="19"><Label xml:lang="de">Regionale Identität</Label></Value>
-    <Value id="20"><Label xml:lang="de">Geografische Gegebenheiten</Label></Value>
-    <Value id="21"><Label xml:lang="de">Reisen, Tourismus</Label></Value>
-    <Value id="22"><Label xml:lang="de">Politik und Wirtschaft</Label></Value>
-    <Value id="23"><Label xml:lang="de">Geschichte, Philosophie, Religion</Label></Value>
-    <Value id="24"><Label xml:lang="de">Globale Herausforderungen</Label></Value>
-    <Value id="25"><Label xml:lang="de">Menschenrechte, moralische Verantwortung</Label></Value>
-    <Value id="26"><Label xml:lang="de">Natur, Wissenschaft und Technik</Label></Value>
-    <Value id="27"><Label xml:lang="de">Bildende Kunst</Label></Value>
-    <Value id="28"><Label xml:lang="de">Darstellende Kunst</Label></Value>
-    <Value id="29"><Label xml:lang="de">Literatur</Label></Value>
-    <Value id="30"><Label xml:lang="de">Musik</Label></Value>
-    <Value id="31"><Label xml:lang="de">Architektur und Design</Label></Value>
-    <Value id="32"><Label xml:lang="de">Presse, Rundfunk, Fernsehen</Label></Value>
-    <Value id="33"><Label xml:lang="de">elektronische Medien</Label></Value>
+    <Value id="1">
+      <Label xml:lang="de">Schulalltag</Label>
+    </Value>
+    <Value id="2">
+      <Label xml:lang="de">Familienalltag</Label>
+    </Value>
+    <Value id="3">
+      <Label xml:lang="de">Wohnen und Umwelt</Label>
+    </Value>
+    <Value id="4">
+      <Label xml:lang="de">Essen und Trinken</Label>
+    </Value>
+    <Value id="5">
+      <Label xml:lang="de">Einkaufen, Kleidung, Konsum</Label>
+    </Value>
+    <Value id="6">
+      <Label xml:lang="de">Dienstleistungen: Arztbesuch, Behörden, Bank u.ä.</Label>
+    </Value>
+    <Value id="7">
+      <Label xml:lang="de">Freizeit und Sport</Label>
+    </Value>
+    <Value id="8">
+      <Label xml:lang="de">Haustiere, Tiere</Label>
+    </Value>
+    <Value id="9">
+      <Label xml:lang="de">Wetter</Label>
+    </Value>
+    <Value id="10">
+      <Label xml:lang="de">Verkehrsmittel</Label>
+    </Value>
+    <Value id="11">
+      <Label xml:lang="de">Zwischenmenschliche Beziehungen: Liebe, Freundschaft, Familie</Label>
+    </Value>
+    <Value id="12">
+      <Label xml:lang="de">Identität</Label>
+    </Value>
+    <Value id="13">
+      <Label xml:lang="de">Erziehung</Label>
+    </Value>
+    <Value id="14">
+      <Label xml:lang="de">Kommunikation</Label>
+    </Value>
+    <Value id="15">
+      <Label xml:lang="de">Schule und Unterricht</Label>
+    </Value>
+    <Value id="16">
+      <Label xml:lang="de">Ausbildung</Label>
+    </Value>
+    <Value id="17">
+      <Label xml:lang="de">Berufe</Label>
+    </Value>
+    <Value id="18">
+      <Label xml:lang="de">Sprache und Sprachenlernen</Label>
+    </Value>
+    <Value id="19">
+      <Label xml:lang="de">Regionale Identität</Label>
+    </Value>
+    <Value id="20">
+      <Label xml:lang="de">Geografische Gegebenheiten</Label>
+    </Value>
+    <Value id="21">
+      <Label xml:lang="de">Reisen, Tourismus</Label>
+    </Value>
+    <Value id="22">
+      <Label xml:lang="de">Politik und Wirtschaft</Label>
+    </Value>
+    <Value id="23">
+      <Label xml:lang="de">Geschichte, Philosophie, Religion</Label>
+    </Value>
+    <Value id="24">
+      <Label xml:lang="de">Globale Herausforderungen</Label>
+    </Value>
+    <Value id="25">
+      <Label xml:lang="de">Menschenrechte, moralische Verantwortung</Label>
+    </Value>
+    <Value id="26">
+      <Label xml:lang="de">Natur, Wissenschaft und Technik</Label>
+    </Value>
+    <Value id="27">
+      <Label xml:lang="de">Bildende Kunst</Label>
+    </Value>
+    <Value id="28">
+      <Label xml:lang="de">Darstellende Kunst</Label>
+    </Value>
+    <Value id="29">
+      <Label xml:lang="de">Literatur</Label>
+    </Value>
+    <Value id="30">
+      <Label xml:lang="de">Musik</Label>
+    </Value>
+    <Value id="31">
+      <Label xml:lang="de">Architektur und Design</Label>
+    </Value>
+    <Value id="32">
+      <Label xml:lang="de">Presse, Rundfunk, Fernsehen</Label>
+    </Value>
+    <Value id="33">
+      <Label xml:lang="de">elektronische Medien</Label>
+    </Value>
   </MDDef>
   <MDDef id="2" type="decimal">
     <Label xml:lang="de">Trennschärfe</Label>
@@ -76,10 +136,20 @@
     <TypeSpec>
       <ListControl>combobox</ListControl>
     </TypeSpec>
-    <Value id="4"><Label xml:lang="de">sehr gering</Label></Value>
-    <Value id="1"><Label xml:lang="de">gering</Label></Value>
-    <Value id="3"><Label xml:lang="de">mittel</Label></Value>
-    <Value id="2"><Label xml:lang="de">hoch</Label></Value>
-    <Value id="5"><Label xml:lang="de">sehr hoch</Label></Value>
+    <Value id="4">
+      <Label xml:lang="de">sehr gering</Label>
+    </Value>
+    <Value id="1">
+      <Label xml:lang="de">gering</Label>
+    </Value>
+    <Value id="3">
+      <Label xml:lang="de">mittel</Label>
+    </Value>
+    <Value id="2">
+      <Label xml:lang="de">hoch</Label>
+    </Value>
+    <Value id="5">
+      <Label xml:lang="de">sehr hoch</Label>
+    </Value>
   </MDDef>
 </MDCat>

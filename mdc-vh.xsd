@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema
+        elementFormDefault="qualified"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- für lang-Attribut -->
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace"
+               schemaLocation="http://www.w3.org/2001/xml.xsd" />
+    <xs:element name="VersionHistory">
+        <xs:annotation>
+            <xs:documentation xml:lang="de">
+                Pro Version werden die Änderungen hier dokumentiert.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Version" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Change" minOccurs="1" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="weight" use="required">
+                                                <xs:annotation>
+                                                    <xs:documentation xml:lang="de">
+                                                        Kennzeichnet das Gewicht der Änderung mit Bezug auf die SemVer-
+                                                        Klassifikation.
+                                                    </xs:documentation>
+                                                </xs:annotation>
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:enumeration value="major"/>
+                                                        <xs:enumeration value="minor"/>
+                                                        <xs:enumeration value="patch"/>
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                            <xs:attribute name="MDref" use="optional" type="xs:nonNegativeInteger">
+                                                <xs:annotation>
+                                                    <xs:documentation xml:lang="de">
+                                                        Bezug zu einer Metadaten-Definition des Katalogs. Wenn nicht
+                                                        angegeben, dann bezieht sich die Änderung auf den gesamten
+                                                        Katalog.
+                                                    </xs:documentation>
+                                                </xs:annotation>
+                                            </xs:attribute>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="version" use="required">
+                            <xs:annotation>
+                                <xs:documentation xml:lang="de">
+                                    Kennzeichnet die neue Version dem SemVer-System folgend.
+                                </xs:documentation>
+                            </xs:annotation>
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern
+                                            value="(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)(\-([0-9A-Za-z-]+(\.[0-9A-Za-z-]+)*))?"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="timestamp" type="xs:dateTime" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+        <xs:unique name="VersionUnique">
+            <xs:selector xpath="Version"/>
+            <xs:field xpath="@version"/>
+        </xs:unique>
+    </xs:element>
+</xs:schema>
