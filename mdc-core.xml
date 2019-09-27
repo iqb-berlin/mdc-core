@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MDCat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="http://raw.githubusercontent.com/iqb-mdc/core/master/mdc.xsd"
-        id="https://raw.githubusercontent.com/iqb-mdc/core/master/mdc-core.xml" version="1.0.0">
+       xsi:noNamespaceSchemaLocation="http://raw.githubusercontent.com/iqb-mdc/xsd/master/mdc.xsd"
+       id="https://raw.githubusercontent.com/iqb-mdc/core/master/mdc-core.xml"
+       version="1.0.0"
+       versionhistory="doi:10.5159/IQB_MDR_Core_VH"
+>
 
   <Label xml:lang="de">Katalog für Metadaten eines IQB-Katalogs bzw. IQB-Metadatendefinitionen</Label>
   <Label xml:lang="en">Catalog for metadata used in IQB-catalogs or IQB-metadata definitions</Label>

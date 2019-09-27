@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VersionHistory xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:noNamespaceSchemaLocation="http://raw.githubusercontent.com/iqb-mdc/xsd/master/mdc-vh.xsd">
+    <Version version="1.0.0" timestamp="2019-09-27T14:02:00">
+        <Change weight="major">Merkmale "Gültigkeitsbereich" und "Inhaltlicher Bezug" hinzugefügt</Change>
+    </Version>
+</VersionHistory>
