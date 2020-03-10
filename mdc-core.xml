@@ -94,5 +94,8 @@
     <Value id="14">
       <Label xml:lang="de">Studie</Label>
     </Value>
+    <Value id="15">
+      <Label xml:lang="de">Antragsinhalt</Label>
+    </Value>
   </MDDef>
 </MDCat>
