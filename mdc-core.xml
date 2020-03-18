@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MDCat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="http://raw.githubusercontent.com/iqb-mdc/xsd/master/mdc.xsd"
+       xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/iqb-berlin/mdc-schemadefinition/master/mdc.xsd"
        id="DOI:10.5159/IQB_MDR_Core_v1"
        version="1.0.0"
        versionhistory="DOI:10.5159/IQB_MDR_Core_VH"
