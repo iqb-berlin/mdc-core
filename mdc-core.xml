@@ -19,34 +19,19 @@
   <License>MIT</License>
 
   <MDDef id="1" type="listmultiselect">
-    <Label xml:lang="de">Inhaltlicher Bezug</Label>
-    <Label xml:lang="en">Subject</Label>
+    <Label xml:lang="de">Bildungsniveau</Label>
+    <Label xml:lang="en">Level of Education</Label>
     <Value id="1">
-      <Label xml:lang="de">Deutsch Primarstufe</Label>
+      <Label xml:lang="de">Primarstufe</Label>
     </Value>
     <Value id="2">
-      <Label xml:lang="de">Deutsch Sek1</Label>
+      <Label xml:lang="de">Sek1</Label>
     </Value>
     <Value id="3">
-      <Label xml:lang="de">Deutsch VERA6</Label>
+      <Label xml:lang="de">VERA6</Label>
     </Value>
     <Value id="4">
-      <Label xml:lang="de">Englisch Sek1</Label>
-    </Value>
-    <Value id="5">
-      <Label xml:lang="de">Forschungsdaten</Label>
-    </Value>
-    <Value id="6">
-      <Label xml:lang="de">Französisch Sek1</Label>
-    </Value>
-    <Value id="7">
-      <Label xml:lang="de">Mathematik Primarstufe</Label>
-    </Value>
-    <Value id="8">
-      <Label xml:lang="de">Mathematik Sek1</Label>
-    </Value>
-    <Value id="9">
-      <Label xml:lang="de">Naturwissenschaften Sek1</Label>
+      <Label xml:lang="de">Sek2</Label>
     </Value>
   </MDDef>
   <MDDef id="2" type="listmultiselect">
@@ -97,5 +82,24 @@
     <Value id="15">
       <Label xml:lang="de">Antragsinhalt</Label>
     </Value>
+  </MDDef>
+  <MDDef id="3" type="listmultiselect">
+      <Label xml:lang="de">Fach</Label>
+      <Label xml:lang="en">Subject</Label>
+      <Value id="1">
+        <Label xml:lang="de">Deutsch</Label>
+      </Value>
+      <Value id="2">
+        <Label xml:lang="de">Englisch</Label>
+      </Value>
+      <Value id="3">
+        <Label xml:lang="de">Französisch</Label>
+      </Value>
+      <Value id="4">
+        <Label xml:lang="de">Mathematik</Label>
+      </Value>
+      <Value id="5">
+        <Label xml:lang="de">Naturwissenschaften</Label>
+      </Value>
   </MDDef>
 </MDCat>
