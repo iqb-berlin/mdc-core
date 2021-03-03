@@ -18,13 +18,13 @@ if(len(xml_file) != 1):
     raise ValueError("There should be exactly one xml file in the directory")
 filename = xml_file[0]
 """
-"""
+
+# this function takes an xml files as an input
 if len(sys.argv) > 1 and str(sys.argv[1]) == "help":
   exit("Please add a input xml file to the command line")
 
 input_file =  sys.argv[1]
-"""
-input_file = "mdc-core.xml"
+
 
 output_folder = Path("./data")
 if not output_folder.exists():
@@ -84,7 +84,7 @@ def buildGraph(cs):
     metadata = cs.metadata
 
     g = Graph()
-    base_url = URIRef("http://example.org/iqb/cs_" + conceptScheme.id + "/")
+    base_url = URIRef("https://example.org/iqb/cs_" + conceptScheme.id + "/")
     
     g.add((base_url, RDF.type, SKOS.ConceptScheme))
     g.add((base_url, DCTERMS.creator, Literal("IQB - Institut zur Qualitätsentwicklung im Bildungswesen", lang="de")))
