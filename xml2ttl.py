@@ -84,7 +84,7 @@ def buildGraph(cs):
     metadata = cs.metadata
 
     g = Graph()
-    base_url = URIRef("https://example.org/iqb/cs_" + conceptScheme.id + "/")
+    base_url = URIRef("https://w3id.org/iqb/mdc-core/cs_" + conceptScheme.id + "/")
     
     g.add((base_url, RDF.type, SKOS.ConceptScheme))
     g.add((base_url, DCTERMS.creator, Literal("IQB - Institut zur Qualitätsentwicklung im Bildungswesen", lang="de")))
