@@ -1,5 +1,5 @@
 {
-  "id": "http://example.org/iqb/cs_2/3",
+  "id": "https://example.org/iqb/cs_2/3",
   "type": "Concept",
   "followers": "https://test.skohub.io/followers?subject=mdc-core%2Fexample.org%2Fiqb%2Fcs_2%2F3",
   "inbox": "https://test.skohub.io/inbox?target=mdc-core%2Fexample.org%2Fiqb%2Fcs_2%2F3",
@@ -7,13 +7,13 @@
     "de": "Aufbereitung/Bewertung"
   },
   "inScheme": {
-    "id": "http://example.org/iqb/cs_2/",
+    "id": "https://example.org/iqb/cs_2/",
     "title": {
       "de": "Gültigkeitsbereich"
     }
   },
   "topConceptOf": {
-    "id": "http://example.org/iqb/cs_2/"
+    "id": "https://example.org/iqb/cs_2/"
   },
   "@context": {
     "@version": 1.1,

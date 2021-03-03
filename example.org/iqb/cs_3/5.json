@@ -1,5 +1,5 @@
 {
-  "id": "http://example.org/iqb/cs_3/5",
+  "id": "https://example.org/iqb/cs_3/5",
   "type": "Concept",
   "followers": "https://test.skohub.io/followers?subject=mdc-core%2Fexample.org%2Fiqb%2Fcs_3%2F5",
   "inbox": "https://test.skohub.io/inbox?target=mdc-core%2Fexample.org%2Fiqb%2Fcs_3%2F5",
@@ -7,13 +7,13 @@
     "de": "Naturwissenschaften"
   },
   "inScheme": {
-    "id": "http://example.org/iqb/cs_3/",
+    "id": "https://example.org/iqb/cs_3/",
     "title": {
       "de": "Fach"
     }
   },
   "topConceptOf": {
-    "id": "http://example.org/iqb/cs_3/"
+    "id": "https://example.org/iqb/cs_3/"
   },
   "@context": {
     "@version": 1.1,
