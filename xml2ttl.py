@@ -77,7 +77,7 @@ def buildGraph(cs):
     metadata = cs.metadata
 
     g = Graph()
-    base_url = URIRef("https://w3id.org/iqb/mdc-core/cs_" + conceptScheme.id.zfill(3) + "/")
+    base_url = URIRef("https://w3id.org/iqb/mdc-core/cs_" + conceptScheme.id.zfill(3))
     metadataString = ""
     for md in metadata:
         if md.d == "1":
