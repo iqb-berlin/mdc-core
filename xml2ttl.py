@@ -11,6 +11,9 @@ SchemeData = namedtuple("SchemeData", ["id", "label", "definition"])
 LangString = namedtuple("LangString", ["value", "lang"])
 MetaString = namedtuple("MetaString",["cat", "d", "value"])
 
+oeh_subjects = Namespace('https://skohub.io/dini-ag-kim/schulfaecher/heads/main/w3id.org/kim/schulfaecher/')
+oeh_educationalContext = Namespace('http://w3id.org/openeduhub/vocabs/educationalContext/')
+
 # this function takes an xml files as an input
 if len(sys.argv) > 1 and str(sys.argv[1]) == "help":
   exit("Please add an input xml file to the command line")
@@ -28,6 +31,7 @@ def getValues(entry):
         return LangString(value, lang)
     else:
         return
+
 def getMetaData(entry):
     if entry is not None:
         d = entry.get("def")
@@ -99,6 +103,31 @@ def buildGraph(cs):
         concept_url = base_url + concept.id.zfill(3)
         g.add((concept_url, RDF.type, SKOS.Concept))
         g.add((concept_url, SKOS.prefLabel, Literal(concept.label.value, lang=concept.label.lang)))
+
+        if(conceptScheme.id.zfill(3) == "001"):
+            if(concept.label.value == "Primarstufe"):
+                g.add((concept_url, SKOS.exactMatch, URIRef(oeh_educationalContext + "grundschule")))
+            elif(concept.label.value == "Sek1"):
+                g.add((concept_url, SKOS.exactMatch, URIRef(oeh_educationalContext + "sekundarstufe_1")))
+            elif(concept.label.value == "Sek2"):
+                g.add((concept_url, SKOS.exactMatch, URIRef(oeh_educationalContext + "sekundarstufe_2")))
+            else:
+                continue
+
+        
+        if(conceptScheme.id.zfill(3) == "003"):
+            if(concept.label.value == "Deutsch"):
+                g.add((concept_url, SKOS.exactMatch, URIRef(oeh_subjects + "s1005")))
+            elif(concept.label.value == "Englisch"):
+                g.add((concept_url, SKOS.exactMatch, URIRef(oeh_subjects + "s1007")))
+            elif(concept.label.value == "Französisch"):
+                g.add((concept_url, SKOS.exactMatch, URIRef(oeh_subjects + "s1009")))
+            elif(concept.label.value == "Mathematik"):
+                g.add((concept_url, SKOS.exactMatch, URIRef(oeh_subjects + "s1017")))
+            elif(concept.label.value == "Naturwissenschaften"):
+                g.add((concept_url, SKOS.broadMatch, URIRef(oeh_subjects + "s1019")))
+            else:
+                continue
     
         if concept.definition:
             g.add((concept_url, SKOS.definition, Literal(concept.definition.value, lang=concept.definition.lang)))
