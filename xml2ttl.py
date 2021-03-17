@@ -104,6 +104,13 @@ def buildGraph(cs):
         g.add((concept_url, RDF.type, SKOS.Concept))
         g.add((concept_url, SKOS.prefLabel, Literal(concept.label.value, lang=concept.label.lang)))
 
+        if concept.definition:
+            g.add((concept_url, SKOS.definition, Literal(concept.definition.value, lang=concept.definition.lang)))
+
+        # add topConceptOf
+        g.add((concept_url, SKOS.topConceptOf, base_url))
+        g.add((base_url, SKOS.hasTopConcept, concept_url))
+
         if(conceptScheme.id.zfill(3) == "001"):
             if(concept.label.value == "Primarstufe"):
                 g.add((concept_url, SKOS.exactMatch, URIRef(oeh_educationalContext + "grundschule")))
@@ -112,7 +119,7 @@ def buildGraph(cs):
             elif(concept.label.value == "Sek2"):
                 g.add((concept_url, SKOS.exactMatch, URIRef(oeh_educationalContext + "sekundarstufe_2")))
             else:
-                continue
+                pass
 
         
         if(conceptScheme.id.zfill(3) == "003"):
@@ -127,15 +134,9 @@ def buildGraph(cs):
             elif(concept.label.value == "Naturwissenschaften"):
                 g.add((concept_url, SKOS.broadMatch, URIRef(oeh_subjects + "s1019")))
             else:
-                continue
+                pass
     
-        if concept.definition:
-            g.add((concept_url, SKOS.definition, Literal(concept.definition.value, lang=concept.definition.lang)))
-    
-            
-        # add topConceptOf
-        g.add((concept_url, SKOS.topConceptOf, base_url))
-        g.add((base_url, SKOS.hasTopConcept, concept_url))
+        
     
     g.bind("skos", SKOS)
     g.bind("dct", DCTERMS)
