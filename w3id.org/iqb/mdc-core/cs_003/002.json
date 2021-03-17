@@ -6,6 +6,11 @@
   "prefLabel": {
     "de": "Englisch"
   },
+  "exactMatch": [
+    {
+      "id": "https://skohub.io/dini-ag-kim/schulfaecher/heads/main/w3id.org/kim/schulfaecher/s1007"
+    }
+  ],
   "inScheme": {
     "id": "https://w3id.org/iqb/mdc-core/cs_003/",
     "title": {

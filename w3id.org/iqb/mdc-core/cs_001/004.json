@@ -6,6 +6,11 @@
   "prefLabel": {
     "de": "Sek2"
   },
+  "exactMatch": [
+    {
+      "id": "http://w3id.org/openeduhub/vocabs/educationalContext/sekundarstufe_2"
+    }
+  ],
   "inScheme": {
     "id": "https://w3id.org/iqb/mdc-core/cs_001/",
     "title": {
